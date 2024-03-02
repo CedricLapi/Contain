@@ -9,7 +9,7 @@ class Node{
 class LinkedList{
     
     constructor(){
-
+        
         this.head = null;
     }
 
@@ -36,7 +36,7 @@ class LinkedList{
     }
 
 
-    
+
     contain(value){
 
         var mover = this.head;
@@ -61,5 +61,30 @@ class LinkedList{
 
 
     }
+
+
+    length(){
+
+        if(!this.head){
+            return 0;
+        }
+
+        var runner = this.head;
+        var length = 0;
+
+
+        while(runner !== null){
+
+            length ++;
+            runner = runner.next;
+
+        }
+
+        return length;
+
+    }
+
+
+
 
 }
